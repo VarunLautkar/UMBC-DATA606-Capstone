@@ -31,7 +31,7 @@ Identifying health risks early allows for preventative intervention through diet
 * **Cost Reduction:** Automated screening helps healthcare systems prioritize patients for clinical testing, reducing unnecessary expenditures.
 * **Personalized Wellness:** Provides actionable insights into how specific variables (e.g., Veganism or living in High Latitudes) affect individual blood chemistry.
 
----
+
 
 ## Proposed Workflow
 
@@ -69,7 +69,7 @@ graph TD
     E --- E2[Feature Importance Ranking]
     end
 
----
+
 
 ## Data Description
 
