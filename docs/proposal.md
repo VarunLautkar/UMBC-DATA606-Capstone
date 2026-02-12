@@ -13,10 +13,8 @@
 2. [Proposed Workflow](#proposed-workflow)
 3. [Data Description](#data-description)
 4. [Target](#target)
-5. [Features and Machine Learning Models](#features-and-machine-learning-models)
-6. [Evaluation and Results](#evaluation-and-results)
-7. [Closing Note](#closing-note)
-8. [References](#references)
+5. [Evaluation and Results](#evaluation-and-results)
+6. [References](#references)
 
 ---
 
@@ -76,25 +74,30 @@ graph TD
 
 The data at hand consists of comprehensive patient records documenting the interplay between lifestyle habits and clinical nutritional health. The dataset contains **4,000 rows** and **34 columns**, providing a rich set of features for predictive modeling.
 
-### Features
-The columns capture a mix of demographic, lifestyle, and clinical attributes:
-* **age** (int64): Patient age.
-* **gender** (object): Biological sex.
-* **diet_type** (object): Vegan, Vegetarian, Omnivore, etc.
-* **sun_exposure** (object): Duration of sunlight contact (Low, Moderate, High).
-* **latitude_region** (object): Geographic location (Low, Mid, High).
-* **vitamin_b12_percent_rda** (float64): Percentage of recommended daily intake.
-* **serum_vitamin_d_ng_ml** (float64): Lab-measured blood levels of Vitamin D.
-* **serum_vitamin_b12_pg_ml** (float64): Lab-measured blood levels of B12.
-* **has_fatigue** (int64): Binary indicator of physical exhaustion.
-* **has_bone_pain** (int64): Binary indicator of skeletal discomfort.
+### **Dataset Feature Catalog**
+
+The dataset consists of **4,000 patient records** and **34 total columns**. Below are the key predictive features and the target variable used in the Risk Engine.
+
+| Feature Name | Data Type | Category | Description / Clinical Significance |
+| :--- | :--- | :--- | :--- |
+| **age** | int64 | Demographic | Patient age; used for age-related malabsorption risks. |
+| **gender** | object | Demographic | Biological sex (Male/Female/Non-binary). |
+| **diet_type** | object | Lifestyle | Primary predictor for B12 and Iron deficiencies (e.g., Vegan). |
+| **sun_exposure** | object | Lifestyle | Categorical measure (Low/Med/High) of UV contact. |
+| **latitude_region** | object | Geographic | Proxy for natural Vitamin D synthesis capability. |
+| **has_fatigue** | int64 (Binary) | Symptom | Binary indicator (0/1) for persistent exhaustion. |
+| **has_bone_pain** | int64 (Binary) | Symptom | Binary indicator (0/1) for skeletal discomfort. |
+| **serum_vitamin_d_ng_ml** | float64 | Lab Value | Clinical blood level of Vitamin D. |
+| **serum_vitamin_b12_pg_ml** | float64 | Lab Value | Clinical blood level of Vitamin B12. |
+| **vitamin_b12_percent_rda**| float64 | Dietary | Percentage of daily requirement met through intake. |
+| **disease_diagnosis** | **Target** | **Label** | The final clinical classification (Multiclass). |
 
 ---
 
 ## Target
 
 The target variable for this project is **`disease_diagnosis`**.
-
+## Predictive Variables
 As previously mentioned, the goal of this "Risk Engine" is to provide a differential diagnosis based on input features. This is a **Multiclass Classification** problem. The model will predict one of the following states:
 1. **Healthy:** No significant deficiency.
 2. **Anemia:** Identified by low iron or B12 levels.
@@ -103,18 +106,6 @@ As previously mentioned, the goal of this "Risk Engine" is to provide a differen
 5. **Night_Blindness:** Identified by severe Vitamin A deficiency markers.
 
 Forecasting this target allows for early clinical intervention and a personalized understanding of nutritional risk based on a patient's unique lifestyle profile.
-
----
-
-## Features and Machine Learning Models
-
-I will implement a three-faceted approach toward reaching the final goal of diagnostic forecasting:
-
-1. **Baseline Classification (Logistic Regression):** A multinomial logistic regression model will be used to establish a linear baseline. This will help determine the initial weight of factors like `diet_type` and `latitude_region` on the final diagnosis.
-
-2. **Ensemble Methods (Random Forest & XGBoost):** Tree-based models will be the core of the engine. **Random Forest** is robust for handling the categorical nature of physical symptoms, while **XGBoost** will be used to optimize accuracy and handle potential class imbalances in rarer deficiencies.
-
-3. **Deep Learning (Artificial Neural Networks):** A Multi-Layer Perceptron (MLP) architecture will be developed to capture complex, non-linear interactions between demographic data and clinical lab values. This will ensure higher precision in identifying patients with "sub-clinical" deficiency states.
 
 ---
 
@@ -129,12 +120,23 @@ The final outcome will be an analytical framework that ranks "Feature Importance
 
 ---
 
-## Closing Note
+## **Model Deployment Workflow**
 
-The inspiration for this project stems from a personal health journey involving Vitamin B12 deficiency. By building this diagnostic engine, I aim to create a technical solution that empowers others to identify health risks early through data. This project bridges the gap between raw data science techniques and practical, life-impacting healthcare solutions.
+To transition the predictive "Risk Engine" from an offline development environment to a live, interactive web application, the following deployment pipeline will be executed:
 
----
+### **1. Model Serialization**
+* **Exporting Weights:** After finalizing hyperparameter tuning for the **Random Forest** or **XGBoost** model, the trained object will be exported.
+* **Format:** The model will be saved using `.joblib` or `.pkl` (Pickle) formats to preserve the learned weights and decision logic for real-time inference.
 
+### **2. Application Scripting (`app.py`)**
+* **Framework:** A user interface will be developed using the **Streamlit** framework in Python.
+* **UI Components:** The script will define input widgets for the predictive features, such as numeric sliders for `age`, dropdown menus for `diet_type`, and toggle switches for binary symptoms (0s and 1s) like `has_fatigue`.
+
+### **3. Local Validation and Testing**
+* **Execution:** The application will be tested locally using the command `streamlit run app.py`.
+* **Data Mapping:** Testing will focus on ensuring that user-facing inputs are correctly mapped back to the **binary code (0/1)** and scaled numerical values expected by the model.
+
+  ---
 ## References
 
 * [1] National Institutes of Health (NIH). [Vitamin B12 Fact Sheet for Health Professionals](https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/).
