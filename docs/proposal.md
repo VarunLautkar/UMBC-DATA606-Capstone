@@ -3,8 +3,8 @@
 **Prepared for** UMBC Data Science Master Degree Capstone  
 **Instructor:** Dr. Chaojie (Jay) Wang  
 **Author:** Varun Lautkar  
-**GitHub:** [Link to your Repo]([https://github.com/YourUsername/UMBC-DATA606-Capstone](https://github.com/VarunLautkar/UMBC-DATA606-Capstone))  
-**LinkedIn:** [Link to your Profile]([https://www.linkedin.com/in/YourProfile/](https://www.linkedin.com/in/varunlautkar/))
+**GitHub:** [VarunLautkar/UMBC-DATA606-Capstone](https://github.com/VarunLautkar/UMBC-DATA606-Capstone)  
+**LinkedIn:** [varunlautkar](https://www.linkedin.com/in/varunlautkar/)
 
 ---
 
