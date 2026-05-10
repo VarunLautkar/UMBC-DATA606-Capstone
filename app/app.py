@@ -42,15 +42,15 @@ with st.form("patient_data_form"):
         age = st.number_input("Age", min_value=1, max_value=120, value=30)
         gender = st.selectbox("Gender", options=["Male", "Female"])
         bmi = st.number_input("BMI", min_value=10.0, max_value=60.0, value=22.5)
-        income_level = st.selectbox("Income Level", options=["Low", "Medium", "High"])
-        latitude_region = st.selectbox("Latitude Region", options=["North", "Equator", "South"])
+        income_level = st.selectbox("Income Level", options=["High", "Low", "Middle"])
+        latitude_region = st.selectbox("Latitude Region", options=["High", "Low", "Mid"])
 
     with col2:
         st.subheader("🧬 Lifestyle")
-        diet_type = st.selectbox("Diet Type", options=["Balanced", "Vegetarian", "Vegan"])
-        smoking_status = st.selectbox("Smoking Status", options=["Non-Smoker", "Smoker"])
-        alcohol_consumption = st.selectbox("Alcohol Consumption", options=["None", "Low", "Moderate", "High"])
-        exercise_level = st.selectbox("Exercise Level", options=["Low", "Moderate", "High"])
+        diet_type = st.selectbox("Diet Type", options=["Omnivore", "Pescatarian", "Vegan", "Vegetarian"])
+        smoking_status = st.selectbox("Smoking Status", options=["Current", "Former", "Never"])
+        alcohol_consumption = st.selectbox("Alcohol Consumption", options=["Heavy", "Moderate"])
+        exercise_level = st.selectbox("Exercise Level", options=["Active", "Light", "Moderate", "Sedentary"])
         sun_exposure = st.selectbox("Sun Exposure", options=["Low", "Moderate", "High"])
 
     with col3:
@@ -149,7 +149,7 @@ if submit_btn:
         
         # Exactly replicate the preprocessing from training
         text_cols = input_data.select_dtypes(include=['object']).columns.tolist()
-        df_final = pd.get_dummies(input_data, columns=text_cols, drop_first=False)
+        df_final = pd.get_dummies(input_data, columns=text_cols, drop_first=True)
         
         # Drop first to align but more importantly reindex to exactly match expected training features
         # Missing dummy columns will be filled with 0
