@@ -1,16 +1,16 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
 
 # Load trained components
 @st.cache_resource
 def load_components():
-    model = joblib.load('final_model.joblib')
-    scaler = joblib.load('scaler.joblib')
-    features = joblib.load('features.joblib')
-    # Because RF predicts integers if trained with integers, or strings if trained with strings
-    # The notebook says: lr, svm, rf trained on y_train (strings), xgb trained on labeled_enc
-    # So rf_model predict() returns string labels directly.
+    model = joblib.load(BASE_DIR / 'final_model.joblib')
+    scaler = joblib.load(BASE_DIR / 'scaler.joblib')
+    features = joblib.load(BASE_DIR / 'features.joblib')
     return model, scaler, features
 
 model, scaler, expected_features = load_components()
