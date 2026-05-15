@@ -1,27 +1,27 @@
-# Data
+# Docs
 
-This folder contains the dataset used for the Multi-Nutritional Deficiency Diagnosis project.
+This folder contains all project documentation for the Multi-Nutritional Deficiency Diagnosis capstone project.
 
-### Dataset
-* **Source:** Synthetic Clinical Dataset
-* **Size:** 4,000 records, 34 features
-* **Target Variable:** `disease_diagnosis` (Healthy, Anemia, Rickets/Osteomalacia, Scurvy, Night Blindness, etc.)
-* **Download:** [Click here to download the dataset](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/data/vitamin_deficiency_disease_dataset_20260123.csv)
-* **Features:** Demographic (Age, BMI), Lifestyle (Diet Type, Sun Exposure), and Clinical (Serum Vitamin levels, Hemoglobin).
+### Files
 
-This dataset is a synthetically generated but clinically realistic dataset representing adult patient records. It contains demographic information, lifestyle factors (such as diet and sun exposure), reported physical symptoms, and laboratory serum/vitamin levels.
+| File | Description |
+| :--- | :--- |
+| `proposal.md` | Original project proposal submitted at the start of the capstone covering background, research questions, dataset description and methodology |
+| `report.md` | Full project report covering EDA, feature engineering, modeling, evaluation, results and conclusions |
+| `Capstone final presentation.pptx` | PowerPoint presentation slides |
+| `Varun_Lautkar_Resume.pdf` | Author's resume |
 
-### Target Variable
+### Project Links
 
-The target variable is `disease_diagnosis`. It is a multi-class categorical label representing the patient's primary diagnostic outcome:
-* `Healthy`
-* `Anemia`
-* `Scurvy`
-* `Rickets_Osteomalacia`
-* `Night_Blindness`
-* *(And other specific nutritional deficiencies)*
+* [Project Proposal](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/docs/proposal.md)
+* [Full Project Report](./report.md)
+* [PowerPoint Presentation](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/docs/Capstone%20final%20presentation.pptx)
+* [Live Streamlit App](https://umbc-data606-capstone-eupqjjcndyiyflwywrgsjl.streamlit.app/)
+* [GitHub Repository](https://github.com/vl271/Capstone-Project-DATA606)
+* [LinkedIn Profile](https://www.linkedin.com/in/varun-lautkar/)
 
-### Note
+### Author
 
-The dataset is perfectly balanced across all target classes. Categorical features (such as `gender`, `diet_type`, `smoking_status`) were stored as strings for clarity during Exploratory Data Analysis (EDA). During the preprocessing phase of the pipeline, these were converted using One-Hot Encoding, and numerical features were standardized using a `StandardScaler`.
-
+**Varun Lautkar** M.S. Data Science — UMBC  
+Capstone Advisor: Prof. Chaojie (Jay) Wang  
+Semester: Spring 2026
