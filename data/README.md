@@ -6,7 +6,7 @@ This folder contains the dataset used for the Multi-Nutritional Deficiency Diagn
 * **Source:** Synthetic Clinical Dataset
 * **Size:** 4,000 records, 34 features
 * **Target Variable:** `disease_diagnosis` (Healthy, Anemia, Rickets/Osteomalacia, Scurvy, Night Blindness, etc.)
-* **Download:** [Click here to download the dataset](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/data/vitamin_deficiency_disease_dataset_20260123.csv)
+* **Download:** [Click here to download the dataset]([https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/data/vitamin_deficiency_disease_dataset_20260123.csv](https://www.kaggle.com/code/hassaan2580/vitamin-deficiency-prediction-random-forest/input?select=vitamin_deficiency_disease_dataset_20260123.csv))
 * **Features:** Demographic (Age, BMI), Lifestyle (Diet Type, Sun Exposure), and Clinical (Serum Vitamin levels, Hemoglobin).
 
 This dataset is a synthetically generated but clinically realistic dataset representing adult patient records. It contains demographic information, lifestyle factors (such as diet and sun exposure), reported physical symptoms, and laboratory serum/vitamin levels.
