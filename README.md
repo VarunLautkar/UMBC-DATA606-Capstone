@@ -30,6 +30,7 @@ Nutritional deficiencies are a significant global health concern, often remainin
 * **Features:** Demographic (Age, BMI), Lifestyle (Diet Type, Sun Exposure), and Clinical (Serum Vitamin levels, Hemoglobin).
 
 ### Repository Structure
+
 ```text
 UMBC-DATA606-Capstone/
 ├── app.py                      # Main Streamlit application script
@@ -42,3 +43,36 @@ UMBC-DATA606-Capstone/
 ├── vitamin_deficiency_data.csv # Project dataset
 ├── README.md                   # This file
 └── Capstone final presentation.pptx # Final project presentation
+```
+### Key Results
+
+| Model | Testing Accuracy | F1-Score | Recall |
+| :--- | :--- | :--- | :--- |
+| Logistic Regression | 66.4% | 0.65 | 0.66 |
+| SVM | 71.2% | 0.70 | 0.71 |
+| XGBoost | 91.5% | 0.91 | 0.91 |
+| **Random Forest** | **92.4%** | **0.92** | **0.92** |
+
+* **Best Model:** **Random Forest** — Provided the most stable performance across all diagnostic classes with the highest F1-Score.
+* **Top Risk Factors:** Serum Iron, Vitamin D levels, Hemoglobin, and Diet Type.
+
+### How to Run
+
+**Jupyter Notebook**
+```bash
+# Open your terminal and run
+jupyter notebook capstone.ipynb
+```
+**Streamlit App**
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+```
+### Technologies Used
+* **Languages:** Python
+* **Libraries:** Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn, Streamlit, Joblib
+* **Tools:** VS Code, Jupyter Notebook, GitHub, Streamlit Cloud
+
