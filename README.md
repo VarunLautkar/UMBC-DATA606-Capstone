@@ -8,7 +8,7 @@
 **Semester:** Spring 2026  
 
 ### Links
-* **GitHub Repository:** [Link to your Repo](https://github.com/vl271/Capstone-Project-DATA606)
+* **GitHub Repository:** [Link to your Repo](https://github.com/VarunLautkar/UMBC-DATA606-Capstone)
 * **LinkedIn Profile:** [Link to your Profile](https://www.linkedin.com/in/varun-lautkar/)
 * **Live Streamlit App:** [Link to your App](https://umbc-data606-capstone-eupqjjcndyiyflwywrgsjl.streamlit.app/)
 * **PowerPoint Presentation:** [Link to your PPT](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/docs/Capstone%20final%20presentation.pptx)
