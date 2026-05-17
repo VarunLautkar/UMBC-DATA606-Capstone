@@ -10,7 +10,7 @@
 ### Links
 * **GitHub Repository:** [Link to your Repo](https://github.com/vl271/Capstone-Project-DATA606)
 * **LinkedIn Profile:** [Link to your Profile](https://www.linkedin.com/in/varun-lautkar/)
-* **Live Streamlit App:** [Link to your App](https://your-app-link.streamlit.app/)
+* **Live Streamlit App:** [Link to your App](https://umbc-data606-capstone-eupqjjcndyiyflwywrgsjl.streamlit.app/)
 * **PowerPoint Presentation:** [Link to your PPT](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/docs/Capstone%20final%20presentation.pptx)
 * **YouTube Video:** [Link to your Video](https://youtu.be/H9rWx2D3niY)
 
