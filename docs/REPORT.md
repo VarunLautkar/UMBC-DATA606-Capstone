@@ -10,7 +10,7 @@
 * [LinkedIn Profile](https://www.linkedin.com/in/varun-lautkar/)
 * [Streamlit App](https://umbc-data606-capstone-eupqjjcndyiyflwywrgsjl.streamlit.app/)
 * [PowerPoint Presentation](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/docs/Capstone%20final%20presentation.pptx)
-* YouTube Video: Coming soon
+* [YouTube Video](https://youtu.be/H9rWx2D3niY)
 
 ---
 
