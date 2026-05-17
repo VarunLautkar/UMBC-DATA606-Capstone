@@ -9,7 +9,7 @@
 * [GitHub Repository](https://github.com/vl271/Capstone-Project-DATA606)
 * [LinkedIn Profile](https://www.linkedin.com/in/varun-lautkar/)
 * [Streamlit App](https://umbc-data606-capstone-eupqjjcndyiyflwywrgsjl.streamlit.app/)
-* [PowerPoint Presentation](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/docs/Capstone%20final%20presentation.pptx)
+* [PowerPoint Presentation](https://docs.google.com/presentation/d/12Og3U7pklGpSNkM0tu0-FeaFtliSsGrjmtfSPIiiBLo/edit?usp=sharing)
 * [YouTube Video](https://youtu.be/H9rWx2D3niY)
 
 ---
