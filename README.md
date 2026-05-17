@@ -12,7 +12,7 @@
 * **LinkedIn Profile:** [Link to your Profile](https://www.linkedin.com/in/varun-lautkar/)
 * **Live Streamlit App:** [Link to your App](https://your-app-link.streamlit.app/)
 * **PowerPoint Presentation:** [Link to your PPT](./Capstone%20final%20presentation.pptx)
-* **YouTube Video:** Coming soon
+* **YouTube Video:** [Link to your Video](https://youtu.be/H9rWx2D3niY)
 
 ### Project Overview
 Nutritional deficiencies are a significant global health concern, often remaining undiagnosed until they cause visible symptoms or long-term damage. This project builds a machine learning-powered diagnostic tool to predict various vitamin and mineral deficiencies (such as Anemia, Scurvy, Rickets, and Night Blindness) using a combination of clinical markers, physical symptoms, and lifestyle factors. The goal is to provide an accessible, non-invasive screening tool that can flag health risks before they require intensive medical intervention.
