@@ -13,7 +13,7 @@
 * **Project Proposal:** [Link to your Profile](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/docs/proposal.md)
 * **Project Report:** [Link to your Profile](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/docs/REPORT.md)
 * **Live Streamlit App:** [Link to your App](https://umbc-data606-capstone-eupqjjcndyiyflwywrgsjl.streamlit.app/)
-* **PowerPoint Presentation:** [Link to your PPT](https://github.com/VarunLautkar/UMBC-DATA606-Capstone/blob/main/docs/Capstone%20final%20presentation.pptx)
+* **PowerPoint Presentation:** [Link to your PPT](https://docs.google.com/presentation/d/12Og3U7pklGpSNkM0tu0-FeaFtliSsGrjmtfSPIiiBLo/edit?usp=sharing)
 * **YouTube Video:** [Link to your Video](https://youtu.be/H9rWx2D3niY)
 
 ### Project Overview
